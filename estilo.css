@@ -1,0 +1,35 @@
+html{font-family: Arial, Helvetica, sans-serif;}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkslategrey;
+    align-items: center;
+    color:white;
+    padding: 0 10px;
+}
+.banner{display: flex;
+        justify-content: center;
+        padding: 30px;
+}
+menu{
+    display:flex
+    }
+li{ display: inline;
+    list-style: none;
+    margin-left: 10px; 
+    padding: 2px;   
+    }
+.flex{ display: flex;   
+       flex-wrap: wrap;
+    }
+.flex > div{flex: 1 0 300px;
+            padding: 10px;
+            border: 10px black;}
+div{background-color: lightslategrey;}
+@media screen and (max-width: 610px) { .banner{display:none}
+                                        div{justify-content: center;}}
+@media screen and (max-width: 530px) {
+    nav{display:none}
+    header{padding: 15px;}
+    h1{margin: auto;}     
+}
